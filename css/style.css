@@ -109,11 +109,7 @@ ol {
 
 
 
-#video1 {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
+
 
 
 
@@ -184,6 +180,22 @@ figure {
   font-weight: bold;
   margin: 0 0 20px 0;
 }
+
+
+
+
+.col-md-8 .me {
+  text-align: right;
+
+}
+
+
+#fh5co-about {
+  background: url(../images/me_bg.png) no-repeat right 70%;
+
+}
+
+
 
 
 
@@ -450,6 +462,7 @@ figure {
 
 .fh5co-bg-dark .fh5co-heading h2 {
   color: #fff !important;
+  padding-bottom: 50px;
 }
 
 .info {
@@ -1307,7 +1320,7 @@ input[type="text"] {
   width: 50px;
   height: 50px;
   display: table;
-  background: rgba(0, 0, 0, 0.8);
+  background: #0e7021bb;
   color: #fff;
   text-align: center;
   -webkit-border-radius: 50%;
@@ -1639,7 +1652,7 @@ input[type="text"] {
 #footer {
   width: 100%;
   margin: 0 auto;
-  background: url(../images/footer_bg.png) no-repeat center bottom;
+  background: url(../images/footer_bg.jpg) no-repeat center bottom;
   height: 708px;
   text-align: center;
   font-size: 16px;
@@ -1649,6 +1662,9 @@ input[type="text"] {
 
 
 }
+
+
+
 
 .footer_inner {
   width: 1320px;
@@ -1664,6 +1680,23 @@ input[type="text"] {
   justify-content: center;
 
 }
+
+
+
+
+
+.thank {
+  color: #fff;
+  position: absolute;
+  top: 350px;
+  right: 450px;
+  transform: translateX(-480);
+  font-size: 60px;
+}
+
+
+
+
 
 #footer .f_ic li {
   padding: 0 30px;
@@ -1703,51 +1736,20 @@ input[type="text"] {
 }
 
 
-/*푸터 포인트*/
-.p_1 {
-  position: absolute;
-  top: -20px;
-  left: 200px;
-  animation: foo 6s infinite linear;
-}
 
-.p_2 {
-  position: absolute;
-  top: 0px;
-  right: 160px;
-  animation: foo1 2s linear infinite alternate
-}
 
-.p_3 {
-  position: absolute;
-  top: 350px;
-  left: 10px;
-  animation: foo1 2s linear infinite alternate
-}
-
-.p_4 {
-  position: absolute;
-  top: 350px;
-  right: 40px;
-  animation: foo 6s infinite linear;
-}
-
-@keyframes foo {
-  from {
-    transform: rotate(0);
+@media (max-width:991px) {
+  #fh5co-about {
+    background: none;
   }
 
-  to {
-    transform: rotate(360deg);
-  }
-}
+  .info {
+    margin: 50px auto;
+    text-align: center;
 
-@keyframes foo1 {
-  from {
-    transform: translateY(0);
   }
 
-  to {
-    transform: translateY(-50px);
+  .col-md-8 .me {
+    text-align: center;
   }
 }
